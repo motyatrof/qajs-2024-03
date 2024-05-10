@@ -44,3 +44,26 @@ export const getTotal = (items = [], discount = 0) => {
   }, 0);
   return total - (total * discount) / 100;
 };
+
+
+// функция getScore
+function getScores(scores) {
+  let totalScore = 0;
+  for (let key in scores) {
+    totalScore += scores[key];
+  }
+  return totalScore; 
+
+  let scores = {
+    Anna: 10,
+    Olga: 1,
+    Ivan: 5,
+  };
+  let total = getScore(scores);
+  console.log('Общая успеваемость:, total');
+  
+}
+getScore(scores);
+
+
+
