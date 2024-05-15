@@ -47,23 +47,39 @@ export const getTotal = (items = [], discount = 0) => {
 
 
 // функция getScore
-function getScores(scores) {
+// function getScore(scores) {
+//   let totalScore = 0;
+//   for (let key in scores) {
+//     totalScore += scores[key];
+//   }
+//   return totalScore; 
+
+//   let scores = {
+//     Anna: 10,
+//     Olga: 1,
+//     Ivan: 5,
+//   };
+//   let total = getScore(scores);
+//   console.log('Общая успеваемость:, total');
+  
+// }
+// getScores(scores);
+
+const scores = {
+  Anna: 10,
+  Olga: 1,
+  Ivan: 5,
+};
+
+function getScore(scores) {
   let totalScore = 0;
   for (let key in scores) {
     totalScore += scores[key];
   }
-  return totalScore; 
-
-  let scores = {
-    Anna: 10,
-    Olga: 1,
-    Ivan: 5,
-  };
-  let total = getScore(scores);
-  console.log('Общая успеваемость:, total');
-  
+  return totalScore;
 }
-getScore(scores);
 
+let totalScore = getScore(scores);
+console.log('Общая успеваемость:', totalScore);
 
 
