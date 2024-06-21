@@ -1,3 +1,5 @@
+import BASE_URL from '../framework/config/config.js'
+
 async function createUser(userName, password) {
   const response = await fetch('https://bookstore.demoqa.com/Account/v1/User', {
       method: 'post',
