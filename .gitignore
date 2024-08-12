@@ -2,4 +2,11 @@ node_modules
 coverage
 .idea
 build
+<<<<<<< HEAD
 reports
+=======
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+>>>>>>> lesson/unit-test
