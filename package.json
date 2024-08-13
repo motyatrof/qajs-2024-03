@@ -25,11 +25,9 @@
     "@babel/preset-env": "^7.24.4",
     "@faker-js/faker": "^8.4.1",
     "@jest/types": "^29.6.3",  
-=======
     "@playwright/test": "^1.45.3",
     "@types/jest": "^29.5.12",
     "@types/node": "^22.0.0",
->>>>>>> lesson/unit-test
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-standard": "^17.1.0",
