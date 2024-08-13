@@ -199,21 +199,36 @@ const config = {
 }
 
 
+// reporters: [
+//   'default',
+//   ['jest-html-reporters', {
+//     publicPath: './reports/html-report',
+//     filename: 'index.html',
+//     openReport: !!process.env.CI
+//   }]
+// ],
+
+// testEnvironment: 'allure-jest/node',
+// ],
+
 reporters: [
   'default',
-  ['jest-html-reporters', {
-    publicPath: './reports/html-report',
-    filename: 'index.html',
-    openReport: !!process.env.CI
-  }]
+  [
+    'jest-html-reporters',
+    {
+      publicPath: './reports/html-report',
+      filename: 'index.html',
+      openReport: !!process.env.CI,
+    },
+  ],
 ],
 
-testEnvironment: 'allure-jest/node',
-}
+// testEnvironment: 'allure-jest/node',
+// }
 
-if (process.env.CI) {
-config.reporters.push(['github-actions', {silent: false}])
-}
+// if (process.env.CI) {
+// config.reporters.push(['github-actions', {silent: false}])
+// }
 
 
 module.exports = config

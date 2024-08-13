@@ -1,4 +1,4 @@
-const request = require("supertest");
+// const request = require("supertest");
 const apiRoot = `https://api.test.appmost.ru/`;
 
 //  anwer (200)
