@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('Успешной авторизации', async ({ page }) => {
-  await page.goto('https://appmost.ru/');
+  await page.visit('https://appmost.ru/');
   await page.getByRole('link', { name: 'Войти' }).click();
   await page.getByPlaceholder('Номер телефона').click();
   await page.getByPlaceholder('Номер телефона').press('PageUp');
